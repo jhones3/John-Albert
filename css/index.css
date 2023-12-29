@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* Additional styling for the body content */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+#body {
+  background-color:#3498db;
+}
+nav {
+  box-shadow: 0px 6px 6px rgba(2, 1, 1, 0.61); 
+}
+.myName {
+  font-family: 'Poppins', sans-serif; 
+  letter-spacing: 5px; 
+  color: #3498db; 
+  font-size: 24px; 
+  font-weight: bold; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
+}
+.navbar-nav {
+ margin: auto 70%;
+}
+#navLink{
+  display: flex;
+  justify-content: center;
+  margin-right: 5px;
+}
+#resume{
+  font-size: 14px;
+  width:120px;
+}
+.download{
+  width:20%;
+}
+.intro-section {
+  color: #fff; /* Set text color to white for better contrast */
+  text-align: center; /* Center-align text */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 70px 0px;
+}
+
+.card-intro {
+  background: rgba(255, 255, 255, 0.9); /* Add a semi-transparent white background to the card */
+  border-radius: 15px; /* Add rounded corners to the card */
+  overflow: hidden; /* Hide overflow to prevent background bleeding */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+.card-intro h5 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #3498db;
+}
+
+.card-intro p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+.card-intro {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card-intro:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+.card-intro img {
+  max-width: 100%;
+  border-radius: 50%; /* Make the image round */
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.hr{
+  width:60%;
+  height: 30px;
+  background-color: #fff;
+  margin: auto;
+}
+.container-lg {
+  background-color: #f5f5f5; /* Choose a light background color */
+  border-radius: 5px;
+  padding: 30px; /* Adjust padding for better spacing */
+}
+
+.text {
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0;
+}
+.text-body-secondary {
+  display: inline-block;
+  vertical-align: bottom;
+  overflow: hidden;
+  border-right: 2px solid #fff; /* Initial cursor */
+  animation: typing 15s steps(40, end)infinite, blink-caret 0.5s step-end infinite;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes blink-caret {
+  from,
+  to {
+    border-right-color: transparent;
+  }
+  50% {
+    border-right-color: #fff;
+  }
+}
+.skill-title {
+  font-weight: 800;
+  padding-top: 20px;
+  color: #3498db; /* Match the color to the theme */
+  text-align: center; /* Center-align the title */
+}
+.card {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+.card-img-top {
+  margin: 3%;
+  max-width: 20%;
+}
+.skill-text {
+  font-size: 12px;
+  color: #555; /* Adjust text color */
+}
+.row {
+  justify-content: center;
+}
+.card-title{
+  font-weight: bold;
+  font-size: large;
+}
+/* Media query for screens with a maximum width of 600 pixels */
+@media screen and (max-width: 991px) {
+  .navbar-nav{
+    margin: auto 40%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
